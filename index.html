@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.8.0.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot; class=&quot;scroll-smooth&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot; /&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+  &lt;title&gt;Jai Limbadiya — Quantitative &amp; Systems Engineering Portfolio&lt;/title&gt;
+  &lt;!-- Tailwind CSS CDN --&gt;
+  &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+  &lt;!-- Google Fonts: Plus Jakarta Sans &amp; JetBrains Mono --&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot; /&gt;
+  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin /&gt;
+  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot; /&gt;
+  &lt;!-- Lucide Icons --&gt;
+  &lt;script src=&quot;https://unpkg.com/lucide@latest&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['&quot;Plus Jakarta Sans&quot;', 'sans-serif'],
+            mono: ['&quot;JetBrains Mono&quot;', 'monospace'],
+          },
+          colors: {
+            brand: {
+              emerald: '#10b981',
+              cyan: '#06b6d4',
+              surface: '#0a0e17',
+              card: '#111827',
+              border: '#1f293d',
+            }
+          }
+        }
+      }
+    };
+  &lt;/script&gt;
+  &lt;style&gt;
+    body {
+      background-color: #080c14;
+      color: #e2e8f0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .grid-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body class=&quot;min-h-screen selection:bg-emerald-500/20 selection:text-emerald-400&quot;&gt;
+
+  &lt;!-- Top Persistent Header --&gt;
+  &lt;header class=&quot;sticky top-0 z-50 backdrop-blur-md bg-[#080c14]/85 border-b border-gray-800/80&quot;&gt;
+    &lt;div class=&quot;max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between&quot;&gt;
+      &lt;div class=&quot;flex items-center space-x-3&quot;&gt;
+        &lt;div class=&quot;w-8 h-8 rounded-lg bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center font-bold text-gray-950 font-mono text-sm&quot;&gt;
+          JL
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;a href=&quot;#&quot; class=&quot;font-bold tracking-tight text-white hover:text-emerald-400 transition-colors&quot;&gt;JAI LIMBADIYA&lt;/a&gt;
+          &lt;span class=&quot;hidden md:inline text-xs text-gray-400 ml-2 font-mono&quot;&gt;// CS &amp; QUANTITATIVE FINANCE · BITS PILANI&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Navigation Links --&gt;
+      &lt;nav class=&quot;hidden lg:flex items-center space-x-7 text-xs uppercase tracking-wider font-semibold text-gray-300&quot;&gt;
+        &lt;a href=&quot;#about&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;About&lt;/a&gt;
+        &lt;a href=&quot;#experience&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Experience&lt;/a&gt;
+        &lt;a href=&quot;#projects&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Projects&lt;/a&gt;
+        &lt;a href=&quot;#research&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Equity Research&lt;/a&gt;
+        &lt;a href=&quot;#skills&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Skills&lt;/a&gt;
+        &lt;a href=&quot;#honors&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Honors&lt;/a&gt;
+        &lt;a href=&quot;#contact&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Contact&lt;/a&gt;
+      &lt;/nav&gt;
+
+      &lt;!-- Action Buttons --&gt;
+      &lt;div class=&quot;flex items-center space-x-3&quot;&gt;
+        &lt;a href=&quot;#contact&quot; class=&quot;inline-flex items-center space-x-1.5 px-3.5 py-1.5 rounded-md bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-xs transition-colors shadow-sm shadow-emerald-500/20&quot;&gt;
+          &lt;span&gt;Connect&lt;/span&gt;
+          &lt;i data-lucide=&quot;arrow-up-right&quot; class=&quot;w-3.5 h-3.5&quot;&gt;&lt;/i&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+
+  &lt;main class=&quot;max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24 grid-pattern&quot;&gt;
+
+    &lt;!-- Hero Section --&gt;
+    &lt;section id=&quot;about&quot; class=&quot;pt-6&quot;&gt;
+      &lt;div class=&quot;flex flex-wrap items-center gap-3 mb-6 font-mono text-xs&quot;&gt;
+        &lt;span class=&quot;inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/60 border border-emerald-500/30 text-emerald-400&quot;&gt;
+          &lt;span class=&quot;w-2 h-2 rounded-full bg-emerald-400 animate-pulse&quot;&gt;&lt;/span&gt;
+          BITS PILANI · GOA CAMPUS · CLASS OF 2028
+        &lt;/span&gt;
+        &lt;span class=&quot;inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400&quot;&gt;
+          QUANT &amp; HIGH-PERFORMANCE SYSTEMS
+        &lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-12 gap-8 items-start&quot;&gt;
+        &lt;div class=&quot;lg:col-span-8 space-y-6&quot;&gt;
+          &lt;h1 class=&quot;text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight&quot;&gt;
+            Engineering Scalable Systems &amp; Deconstructing &lt;span class=&quot;text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400&quot;&gt;Capital Markets&lt;/span&gt;
+          &lt;/h1&gt;
+          &lt;p class=&quot;text-lg text-gray-300 max-w-3xl leading-relaxed&quot;&gt;
+            Computer Science undergraduate with a Finance Minor at BITS Pilani K K Birla Goa Campus. Bridging bare-metal operating system primitives, high-throughput backend pipelines, and institutional-grade equity valuation.
+          &lt;/p&gt;
+
+          &lt;div class=&quot;flex flex-wrap gap-3 pt-2&quot;&gt;
+            &lt;a href=&quot;#projects&quot; class=&quot;px-4 py-2.5 rounded-lg bg-emerald-500 text-gray-950 font-semibold text-xs flex items-center gap-2 hover:bg-emerald-400 transition-colors shadow-lg shadow-emerald-500/20&quot;&gt;
+              &lt;i data-lucide=&quot;code-2&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; Explore Projects
+            &lt;/a&gt;
+            &lt;a href=&quot;#research&quot; class=&quot;px-4 py-2.5 rounded-lg bg-gray-900 border border-gray-700 text-gray-200 font-semibold text-xs flex items-center gap-2 hover:border-cyan-400 hover:text-cyan-400 transition-colors&quot;&gt;
+              &lt;i data-lucide=&quot;line-chart&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; View Equity Research
+            &lt;/a&gt;
+            &lt;a href=&quot;mailto:f20240516@goa.bits-pilani.ac.in&quot; class=&quot;px-4 py-2.5 rounded-lg bg-gray-900/60 border border-gray-800 text-gray-300 font-semibold text-xs flex items-center gap-2 hover:border-gray-600 transition-colors&quot;&gt;
+              &lt;i data-lucide=&quot;mail&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; Get in Touch
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Telemetry Card --&gt;
+        &lt;div class=&quot;lg:col-span-4 bg-gray-900/90 border border-gray-800 rounded-2xl p-6 shadow-2xl space-y-4&quot;&gt;
+          &lt;div class=&quot;flex justify-between items-center border-b border-gray-800 pb-3 font-mono text-xs&quot;&gt;
+            &lt;span class=&quot;text-gray-400 uppercase tracking-wider&quot;&gt;Profile Telemetry&lt;/span&gt;
+            &lt;span class=&quot;text-emerald-400 flex items-center gap-1 font-semibold&quot;&gt;&lt;i data-lucide=&quot;shield-check&quot; class=&quot;w-3.5 h-3.5&quot;&gt;&lt;/i&gt; VERIFIED&lt;/span&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;space-y-3 font-mono text-xs&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center bg-gray-950/60 p-3 rounded-lg border border-gray-800/80&quot;&gt;
+              &lt;span class=&quot;text-gray-400&quot;&gt;B.E. Computer Science&lt;/span&gt;
+              &lt;span class=&quot;text-white font-bold text-sm&quot;&gt;8.33 &lt;span class=&quot;text-gray-500 text-xs font-normal&quot;&gt;/ 10 CGPA&lt;/span&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flex justify-between items-center bg-gray-950/60 p-3 rounded-lg border border-gray-800/80&quot;&gt;
+              &lt;span class=&quot;text-gray-400&quot;&gt;Minor in Finance&lt;/span&gt;
+              &lt;span class=&quot;text-emerald-400 font-bold text-sm&quot;&gt;9.00 &lt;span class=&quot;text-gray-500 text-xs font-normal&quot;&gt;/ 10 GPA&lt;/span&gt;&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;p-3 bg-gradient-to-r from-emerald-950/40 to-cyan-950/40 border border-emerald-500/20 rounded-lg&quot;&gt;
+              &lt;div class=&quot;flex justify-between text-[11px] text-gray-300 font-semibold&quot;&gt;
+                &lt;span&gt;Merit Recognition&lt;/span&gt;
+                &lt;span class=&quot;text-emerald-400&quot;&gt;100% AWARD&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;text-xs text-white font-medium mt-1&quot;&gt;Molbio Diagnostics Alumni Scholar&lt;/div&gt;
+              &lt;p class=&quot;text-[10px] text-gray-400 mt-0.5&quot;&gt;Full tuition waiver for top academic percentile&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+
+      &lt;!-- Quick Metrics Bar --&gt;
+      &lt;div class=&quot;grid grid-cols-2 md:grid-cols-4 gap-4 mt-10&quot;&gt;
+        &lt;div class=&quot;bg-gray-900/40 border border-gray-800/80 rounded-xl p-4&quot;&gt;
+          &lt;div class=&quot;text-[11px] font-mono text-gray-400 uppercase&quot;&gt;Target Recruitment&lt;/div&gt;
+          &lt;div class=&quot;text-base font-bold text-white mt-1&quot;&gt;Summer / Fall '26&lt;/div&gt;
+          &lt;div class=&quot;text-[11px] text-emerald-400 mt-0.5&quot;&gt;Quantitative • SDE • Research&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bg-gray-900/40 border border-gray-800/80 rounded-xl p-4&quot;&gt;
+          &lt;div class=&quot;text-[11px] font-mono text-gray-400 uppercase&quot;&gt;Pipeline Capacity&lt;/div&gt;
+          &lt;div class=&quot;text-base font-bold text-white mt-1&quot;&gt;40,000+ Records&lt;/div&gt;
+          &lt;div class=&quot;text-[11px] text-cyan-400 mt-0.5&quot;&gt;ETL • Index Aggregations&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bg-gray-900/40 border border-gray-800/80 rounded-xl p-4&quot;&gt;
+          &lt;div class=&quot;text-[11px] font-mono text-gray-400 uppercase&quot;&gt;Universe Analyzed&lt;/div&gt;
+          &lt;div class=&quot;text-base font-bold text-white mt-1&quot;&gt;500+ NSE Equities&lt;/div&gt;
+          &lt;div class=&quot;text-[11px] text-emerald-400 mt-0.5&quot;&gt;Percentile • Multiples • DCF&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;bg-gray-900/40 border border-gray-800/80 rounded-xl p-4&quot;&gt;
+          &lt;div class=&quot;text-[11px] font-mono text-gray-400 uppercase&quot;&gt;Systems Mastery&lt;/div&gt;
+          &lt;div class=&quot;text-base font-bold text-white mt-1&quot;&gt;Pintos • C • x86&lt;/div&gt;
+          &lt;div class=&quot;text-[11px] text-cyan-400 mt-0.5&quot;&gt;Synchronization • Syscalls&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Dual-Track Value Proposition --&gt;
+    &lt;section class=&quot;space-y-6&quot;&gt;
+      &lt;div class=&quot;border-b border-gray-800 pb-3&quot;&gt;
+        &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-emerald-400&quot;&gt;Strategic Architecture&lt;/span&gt;
+        &lt;h2 class=&quot;text-2xl font-bold text-white mt-1&quot;&gt;Dual-Track Value Proposition&lt;/h2&gt;
+        &lt;p class=&quot;text-sm text-gray-400&quot;&gt;A rare synthesis of low-latency computational execution and disciplined fundamental financial discernment.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;&gt;
+        &lt;!-- Track A --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 hover:border-cyan-500/40 transition-colors rounded-2xl p-6 space-y-4&quot;&gt;
+          &lt;div class=&quot;flex items-center justify-between&quot;&gt;
+            &lt;span class=&quot;px-2.5 py-1 rounded bg-cyan-950/80 border border-cyan-500/30 text-cyan-400 font-mono text-[11px]&quot;&gt;TRACK A // COMPUTATIONAL RIGOR&lt;/span&gt;
+            &lt;i data-lucide=&quot;cpu&quot; class=&quot;w-5 h-5 text-cyan-400&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-lg font-bold text-white&quot;&gt;Systems &amp; High-Performance Software&lt;/h3&gt;
+          &lt;p class=&quot;text-sm text-gray-300 leading-relaxed&quot;&gt;
+            Engineered from the hardware boundary upward. Depth in CPU synchronization, thread scheduling, modular microservices, memory layout optimizations, and reproducible Docker containerization.
+          &lt;/p&gt;
+          &lt;ul class=&quot;text-xs text-gray-400 space-y-2 font-mono&quot;&gt;
+            &lt;li class=&quot;flex items-start gap-2&quot;&gt;&lt;i data-lucide=&quot;check-circle-2&quot; class=&quot;w-4 h-4 text-cyan-400 shrink-0 mt-0.5&quot;&gt;&lt;/i&gt; Kernel mechanics: Thread priority, system call handling, Pintos OS in C&lt;/li&gt;
+            &lt;li class=&quot;flex items-start gap-2&quot;&gt;&lt;i data-lucide=&quot;check-circle-2&quot; class=&quot;w-4 h-4 text-cyan-400 shrink-0 mt-0.5&quot;&gt;&lt;/i&gt; Distributed pipelines: FastAPI async backends, Node.js concurrency&lt;/li&gt;
+            &lt;li class=&quot;flex items-start gap-2&quot;&gt;&lt;i data-lucide=&quot;check-circle-2&quot; class=&quot;w-4 h-4 text-cyan-400 shrink-0 mt-0.5&quot;&gt;&lt;/i&gt; Database efficiency: Query plan tuning, index aggregation on MySQL &amp; PostgreSQL&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class=&quot;pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-gray-400&quot;&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;C / C++&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;Linux / GDB&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;FastAPI&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;Docker&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;Prisma ORM&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Track B --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 hover:border-emerald-500/40 transition-colors rounded-2xl p-6 space-y-4&quot;&gt;
+          &lt;div class=&quot;flex items-center justify-between&quot;&gt;
+            &lt;span class=&quot;px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-500/30 text-emerald-400 font-mono text-[11px]&quot;&gt;TRACK B // FINANCIAL PRECISION&lt;/span&gt;
+            &lt;i data-lucide=&quot;candlestick-chart&quot; class=&quot;w-5 h-5 text-emerald-400&quot;&gt;&lt;/i&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-lg font-bold text-white&quot;&gt;Equity Research &amp; Capital Allocation&lt;/h3&gt;
+          &lt;p class=&quot;text-sm text-gray-300 leading-relaxed&quot;&gt;
+            Systematic evaluation of company moats, cash flows, and balance sheet resilience. Translating micro-operating dynamics and macro headwinds into quantitative valuations.
+          &lt;/p&gt;
+          &lt;ul class=&quot;text-xs text-gray-400 space-y-2 font-mono&quot;&gt;
+            &lt;li class=&quot;flex items-start gap-2&quot;&gt;&lt;i data-lucide=&quot;check-circle-2&quot; class=&quot;w-4 h-4 text-emerald-400 shrink-0 mt-0.5&quot;&gt;&lt;/i&gt; Valuation mechanics: Multi-stage DCF, Reverse DCF, and EV/EBITDA multiples&lt;/li&gt;
+            &lt;li class=&quot;flex items-start gap-2&quot;&gt;&lt;i data-lucide=&quot;check-circle-2&quot; class=&quot;w-4 h-4 text-emerald-400 shrink-0 mt-0.5&quot;&gt;&lt;/i&gt; Quality forensics: 3-stage DuPont decompositions, working capital cycles&lt;/li&gt;
+            &lt;li class=&quot;flex items-start gap-2&quot;&gt;&lt;i data-lucide=&quot;check-circle-2&quot; class=&quot;w-4 h-4 text-emerald-400 shrink-0 mt-0.5&quot;&gt;&lt;/i&gt; Sector deep-dives: Indian Infrastructure, Cables &amp; Wires, PEB fabrication&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class=&quot;pt-2 flex flex-wrap gap-2 text-[11px] font-mono text-gray-400&quot;&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;DCF Modeling&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;DuPont Analysis&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;Reverse DCF&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;yfinance / pandas&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800/80 px-2 py-1 rounded&quot;&gt;Macro Synthesis&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Professional Experience --&gt;
+    &lt;section id=&quot;experience&quot; class=&quot;space-y-6&quot;&gt;
+      &lt;div class=&quot;border-b border-gray-800 pb-3&quot;&gt;
+        &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-emerald-400&quot;&gt;Verified Track Record&lt;/span&gt;
+        &lt;h2 class=&quot;text-2xl font-bold text-white mt-1&quot;&gt;Professional Experience&lt;/h2&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 sm:p-8 space-y-6 relative overflow-hidden&quot;&gt;
+        &lt;div class=&quot;flex flex-col sm:flex-row sm:items-center justify-between gap-4&quot;&gt;
+          &lt;div&gt;
+            &lt;div class=&quot;flex items-center gap-3&quot;&gt;
+              &lt;h3 class=&quot;text-xl font-bold text-white&quot;&gt;NoQs Digital&lt;/h3&gt;
+              &lt;span class=&quot;px-2.5 py-0.5 rounded-full bg-emerald-950 border border-emerald-500/40 text-emerald-400 text-xs font-mono inline-flex items-center gap-1&quot;&gt;
+                &lt;i data-lucide=&quot;award&quot; class=&quot;w-3 h-3&quot;&gt;&lt;/i&gt; Intern of the Month Award
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;text-sm text-gray-400 mt-1&quot;&gt;Data Analyst Intern&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;font-mono text-xs text-gray-400 flex items-center gap-2&quot;&gt;
+            &lt;i data-lucide=&quot;calendar&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; May 2026 – Jul 2026 • Mumbai / Hybrid
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono&quot;&gt;
+          &lt;div class=&quot;bg-gray-950/60 p-4 rounded-xl border border-gray-800&quot;&gt;
+            &lt;div class=&quot;text-2xl font-bold text-emerald-400&quot;&gt;40,000+&lt;/div&gt;
+            &lt;div class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Validated records processed end-to-end&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bg-gray-950/60 p-4 rounded-xl border border-gray-800&quot;&gt;
+            &lt;div class=&quot;text-2xl font-bold text-cyan-400&quot;&gt;~3.2x&lt;/div&gt;
+            &lt;div class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Query speedup via indexing &amp; aggregations&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;bg-gray-950/60 p-4 rounded-xl border border-gray-800&quot;&gt;
+            &lt;div class=&quot;text-2xl font-bold text-white&quot;&gt;100%&lt;/div&gt;
+            &lt;div class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Automated daily executive reporting run&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;space-y-3 text-sm text-gray-300&quot;&gt;
+          &lt;div class=&quot;flex items-start gap-3&quot;&gt;
+            &lt;i data-lucide=&quot;terminal&quot; class=&quot;w-4 h-4 text-emerald-400 shrink-0 mt-1&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;Architected an end-to-end Python data extraction and sanitization pipeline that ingested, structured, and validated 40,000+ customer transaction rows with zero payload loss.&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex items-start gap-3&quot;&gt;
+            &lt;i data-lucide=&quot;database&quot; class=&quot;w-4 h-4 text-cyan-400 shrink-0 mt-1&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;Optimized complex analytical queries across MySQL and SQLite through strategic B-tree indexing and compound grouping, drastically cutting reporting latency for operational leadership.&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex items-start gap-3&quot;&gt;
+            &lt;i data-lucide=&quot;bar-chart-3&quot; class=&quot;w-4 h-4 text-emerald-400 shrink-0 mt-1&quot;&gt;&lt;/i&gt;
+            &lt;span&gt;Engineered live Power BI dashboards coupled with automated Google Apps Script triggers, providing C-suite visibility on KPI drift and revenue cohort dynamics.&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Technical Projects --&gt;
+    &lt;section id=&quot;projects&quot; class=&quot;space-y-6&quot;&gt;
+      &lt;div class=&quot;border-b border-gray-800 pb-3 flex items-center justify-between&quot;&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-cyan-400&quot;&gt;Production Deployments &amp; Kernel Systems&lt;/span&gt;
+          &lt;h2 class=&quot;text-2xl font-bold text-white mt-1&quot;&gt;Flagship Technical Projects&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;text-xs font-mono text-gray-400&quot;&gt;3 Production-Grade Repositories&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid grid-cols-1 md:grid-cols-3 gap-6&quot;&gt;
+        &lt;!-- StockEdge --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 space-y-4 hover:border-emerald-500/40 transition-colors flex flex-col justify-between&quot;&gt;
+          &lt;div class=&quot;space-y-3&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+              &lt;span class=&quot;px-2 py-0.5 rounded bg-emerald-950 text-emerald-400 text-[10px] font-mono uppercase&quot;&gt;Fintech // Platform&lt;/span&gt;
+              &lt;i data-lucide=&quot;external-link&quot; class=&quot;w-4 h-4 text-gray-400&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;h3 class=&quot;text-lg font-bold text-white&quot;&gt;StockEdge: Equity Analysis Engine&lt;/h3&gt;
+            &lt;div class=&quot;text-xs font-mono text-gray-400&quot;&gt;FastAPI • React • pandas • yfinance&lt;/div&gt;
+            &lt;p class=&quot;text-xs text-gray-300 leading-relaxed&quot;&gt;
+              Automated institutional scoring portal analyzing 500+ NSE equities simultaneously. Computes valuation rank, momentum z-scores, and outputs composite signals.
+            &lt;/p&gt;
+            &lt;ul class=&quot;text-[11px] text-gray-400 space-y-1 font-mono&quot;&gt;
+              &lt;li&gt;• Percentile distribution of 500+ stocks&lt;/li&gt;
+              &lt;li&gt;• Buy / Watchlist / Avoid heuristic engine&lt;/li&gt;
+              &lt;li&gt;• Interactive React telemetry with live charts&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;pt-4 border-t border-gray-800 flex justify-between items-center text-[11px] font-mono text-gray-400&quot;&gt;
+            &lt;span&gt;NSE Equity Ingestion&lt;/span&gt;
+            &lt;span class=&quot;text-emerald-400&quot;&gt;Production Code&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Pintos OS --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 space-y-4 hover:border-cyan-500/40 transition-colors flex flex-col justify-between&quot;&gt;
+          &lt;div class=&quot;space-y-3&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+              &lt;span class=&quot;px-2 py-0.5 rounded bg-cyan-950 text-cyan-400 text-[10px] font-mono uppercase&quot;&gt;Systems // OS Kernel&lt;/span&gt;
+              &lt;i data-lucide=&quot;code&quot; class=&quot;w-4 h-4 text-gray-400&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;h3 class=&quot;text-lg font-bold text-white&quot;&gt;Pintos Operating System&lt;/h3&gt;
+            &lt;div class=&quot;text-xs font-mono text-gray-400&quot;&gt;C • x86 Assembly • GDB • Linux&lt;/div&gt;
+            &lt;p class=&quot;text-xs text-gray-300 leading-relaxed&quot;&gt;
+              Re-engineered core subsystems of the educational x86 OS kernel. Built preemptive scheduling, synchronization primitives, and protected syscall dispatcher.
+            &lt;/p&gt;
+            &lt;ul class=&quot;text-[11px] text-gray-400 space-y-1 font-mono&quot;&gt;
+              &lt;li&gt;• Priority donation &amp; semaphores in C&lt;/li&gt;
+              &lt;li&gt;• User process lifecycle &amp; argument passing&lt;/li&gt;
+              &lt;li&gt;• Safe pointer validation for system calls&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;pt-4 border-t border-gray-800 flex justify-between items-center text-[11px] font-mono text-gray-400&quot;&gt;
+            &lt;span&gt;Bare-Metal C&lt;/span&gt;
+            &lt;span class=&quot;text-cyan-400&quot;&gt;Low-Level Architecture&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- PS Portal --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 space-y-4 hover:border-gray-700 transition-colors flex flex-col justify-between&quot;&gt;
+          &lt;div class=&quot;space-y-3&quot;&gt;
+            &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+              &lt;span class=&quot;px-2 py-0.5 rounded bg-gray-800 text-gray-300 text-[10px] font-mono uppercase&quot;&gt;Full-Stack // Web&lt;/span&gt;
+              &lt;i data-lucide=&quot;external-link&quot; class=&quot;w-4 h-4 text-gray-400&quot;&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;h3 class=&quot;text-lg font-bold text-white&quot;&gt;PS Portal: Academic Management&lt;/h3&gt;
+            &lt;div class=&quot;text-xs font-mono text-gray-400&quot;&gt;Node.js • Express • Prisma • MySQL • React&lt;/div&gt;
+            &lt;p class=&quot;text-xs text-gray-300 leading-relaxed&quot;&gt;
+              Centralized internship &amp; practice school management platform built for institutional scale with granular access boundaries and auditable workflow states.
+            &lt;/p&gt;
+            &lt;ul class=&quot;text-[11px] text-gray-400 space-y-1 font-mono&quot;&gt;
+              &lt;li&gt;• 5-tier RBAC (Student, Faculty, Mentor, Admin)&lt;/li&gt;
+              &lt;li&gt;• Prisma ORM schema with cascading relations&lt;/li&gt;
+              &lt;li&gt;• Stateless JWT session security &amp; rate limits&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;pt-4 border-t border-gray-800 flex justify-between items-center text-[11px] font-mono text-gray-400&quot;&gt;
+            &lt;span&gt;Enterprise Architecture&lt;/span&gt;
+            &lt;span class=&quot;text-gray-300&quot;&gt;Multi-Tenant RBAC&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Published Equity Research --&gt;
+    &lt;section id=&quot;research&quot; class=&quot;space-y-6&quot;&gt;
+      &lt;div class=&quot;border-b border-gray-800 pb-3 flex items-center justify-between&quot;&gt;
+        &lt;div&gt;
+          &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-emerald-400&quot;&gt;Society of Finance &amp; Investing (SOFI)&lt;/span&gt;
+          &lt;h2 class=&quot;text-2xl font-bold text-white mt-1&quot;&gt;Published Equity Research &amp; Market Insights&lt;/h2&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;text-xs font-mono text-emerald-400&quot;&gt;● Institutional Research Papers&lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;&gt;
+        &lt;!-- Paper 1 --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 sm:p-7 space-y-4 hover:border-emerald-500/40 transition-colors&quot;&gt;
+          &lt;div class=&quot;flex justify-between items-start font-mono text-[11px]&quot;&gt;
+            &lt;span class=&quot;text-emerald-400 font-semibold&quot;&gt;SOFI RESEARCH // JULY 2025&lt;/span&gt;
+            &lt;span class=&quot;text-gray-400 uppercase&quot;&gt;CAPITAL GOODS&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-xl font-bold text-white leading-snug&quot;&gt;
+            Rewiring Infrastructure: The Financial Circuitry of India's Cables &amp; Wires Sector
+          &lt;/h3&gt;
+          &lt;p class=&quot;text-xs text-gray-300 leading-relaxed&quot;&gt;
+            In-depth strategic and quantitative equity research covering sector capital expansion cycles, supply-chain localization, and margin trajectories.
+          &lt;/p&gt;
+
+          &lt;div class=&quot;grid grid-cols-2 gap-3 bg-gray-950/70 p-3 rounded-xl border border-gray-800/80 font-mono text-xs&quot;&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Key Coverage&lt;/span&gt;
+              &lt;span class=&quot;text-white font-semibold&quot;&gt;Polycab India • RR Kabel&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Analytical Framework&lt;/span&gt;
+              &lt;span class=&quot;text-emerald-400 font-semibold&quot;&gt;3-Stage DuPont Breakdown&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Working Capital Metrics&lt;/span&gt;
+              &lt;span class=&quot;text-gray-200&quot;&gt;Cash Conversion Cycles&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Macro Variable&lt;/span&gt;
+              &lt;span class=&quot;text-cyan-400 font-semibold&quot;&gt;Copper Hedging &amp; Infra Capex&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;ul class=&quot;text-xs text-gray-400 space-y-1.5 list-disc list-inside&quot;&gt;
+            &lt;li&gt;Evaluated EBITDA margin elasticity against volatile LME copper and aluminum inputs.&lt;/li&gt;
+            &lt;li&gt;Deconstructed distributor networks and working capital resilience establishing distribution moats.&lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;div class=&quot;pt-2 flex justify-between items-center text-xs font-mono&quot;&gt;
+            &lt;span class=&quot;text-gray-500&quot;&gt;Published by SOFI BITS Goa&lt;/span&gt;
+            &lt;span class=&quot;text-emerald-400 font-semibold hover:underline cursor-pointer flex items-center gap-1&quot;&gt;Read Research Note &lt;i data-lucide=&quot;arrow-right&quot; class=&quot;w-3.5 h-3.5&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Paper 2 --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 sm:p-7 space-y-4 hover:border-emerald-500/40 transition-colors&quot;&gt;
+          &lt;div class=&quot;flex justify-between items-start font-mono text-[11px]&quot;&gt;
+            &lt;span class=&quot;text-emerald-400 font-semibold&quot;&gt;SOFI RESEARCH // INDUSTRIAL&lt;/span&gt;
+            &lt;span class=&quot;text-gray-400 uppercase&quot;&gt;INDUSTRIAL INFRA&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;h3 class=&quot;text-xl font-bold text-white leading-snug&quot;&gt;
+            India's PEB Sector: Growth Dynamics, Industry Moats &amp; Valuations
+          &lt;/h3&gt;
+          &lt;p class=&quot;text-xs text-gray-300 leading-relaxed&quot;&gt;
+            Rigorous analysis of Pre-Engineered Buildings (PEB) driven by national logistics corridors, warehouse modernization, and private capex expansion.
+          &lt;/p&gt;
+
+          &lt;div class=&quot;grid grid-cols-2 gap-3 bg-gray-950/70 p-3 rounded-xl border border-gray-800/80 font-mono text-xs&quot;&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Core Peers&lt;/span&gt;
+              &lt;span class=&quot;text-white font-semibold&quot;&gt;Interarch • Pennar Industries&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Valuation Models&lt;/span&gt;
+              &lt;span class=&quot;text-emerald-400 font-semibold&quot;&gt;Reverse DCF + EV/EBITDA&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Competitive Lens&lt;/span&gt;
+              &lt;span class=&quot;text-gray-200&quot;&gt;Porter's 5 Forces Moat&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;span class=&quot;text-[10px] text-gray-500 block uppercase&quot;&gt;Catalysts&lt;/span&gt;
+              &lt;span class=&quot;text-cyan-400 font-semibold&quot;&gt;E-Commerce &amp; Data Centers&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;ul class=&quot;text-xs text-gray-400 space-y-1.5 list-disc list-inside&quot;&gt;
+            &lt;li&gt;Applied Reverse DCF to quantify growth expectations baked into prevailing market multiples.&lt;/li&gt;
+            &lt;li&gt;Evaluated capacity utilization rates, order book-to-bill ratios, and steel price risk pass-through.&lt;/li&gt;
+          &lt;/ul&gt;
+
+          &lt;div class=&quot;pt-2 flex justify-between items-center text-xs font-mono&quot;&gt;
+            &lt;span class=&quot;text-gray-500&quot;&gt;Society of Finance &amp; Investing&lt;/span&gt;
+            &lt;span class=&quot;text-emerald-400 font-semibold hover:underline cursor-pointer flex items-center gap-1&quot;&gt;Read Research Note &lt;i data-lucide=&quot;arrow-right&quot; class=&quot;w-3.5 h-3.5&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Technical &amp; Quantitative Arsenal (Skills) --&gt;
+    &lt;section id=&quot;skills&quot; class=&quot;space-y-6&quot;&gt;
+      &lt;div class=&quot;border-b border-gray-800 pb-3&quot;&gt;
+        &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-cyan-400&quot;&gt;Core Competencies&lt;/span&gt;
+        &lt;h2 class=&quot;text-2xl font-bold text-white mt-1&quot;&gt;Technical &amp; Quantitative Arsenal&lt;/h2&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 font-mono text-xs&quot;&gt;
+        &lt;div class=&quot;bg-gray-900/50 border border-gray-800 rounded-xl p-5 space-y-3&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-white font-bold&quot;&gt;
+            &lt;i data-lucide=&quot;code&quot; class=&quot;w-4 h-4 text-emerald-400&quot;&gt;&lt;/i&gt; Programming Languages
+          &lt;/div&gt;
+          &lt;div class=&quot;flex flex-wrap gap-2 text-gray-300&quot;&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Python&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;C++&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;C&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;SQL&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;JavaScript&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Java&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;bg-gray-900/50 border border-gray-800 rounded-xl p-5 space-y-3&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-white font-bold&quot;&gt;
+            &lt;i data-lucide=&quot;layout-grid&quot; class=&quot;w-4 h-4 text-cyan-400&quot;&gt;&lt;/i&gt; Systems &amp; Web Architectures
+          &lt;/div&gt;
+          &lt;div class=&quot;flex flex-wrap gap-2 text-gray-300&quot;&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;React&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;FastAPI&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Node.js&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Express&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;REST APIs&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Tailwind CSS&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;bg-gray-900/50 border border-gray-800 rounded-xl p-5 space-y-3&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-white font-bold&quot;&gt;
+            &lt;i data-lucide=&quot;pie-chart&quot; class=&quot;w-4 h-4 text-emerald-400&quot;&gt;&lt;/i&gt; Finance &amp; Valuation
+          &lt;/div&gt;
+          &lt;div class=&quot;flex flex-wrap gap-2 text-gray-300&quot;&gt;
+            &lt;span class=&quot;bg-emerald-950/70 border border-emerald-500/40 text-emerald-300 px-2 py-1 rounded&quot;&gt;DCF / Reverse DCF&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;DuPont Analysis&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;EV/EBITDA Multiples&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Financial Modeling&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;yfinance / pandas&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Ratio Analysis&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;bg-gray-900/50 border border-gray-800 rounded-xl p-5 space-y-3&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-white font-bold&quot;&gt;
+            &lt;i data-lucide=&quot;database&quot; class=&quot;w-4 h-4 text-cyan-400&quot;&gt;&lt;/i&gt; Databases &amp; ORMs
+          &lt;/div&gt;
+          &lt;div class=&quot;flex flex-wrap gap-2 text-gray-300&quot;&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;PostgreSQL&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;MySQL&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;SQLite&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Prisma ORM&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;SQLAlchemy&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Query Optimization&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;bg-gray-900/50 border border-gray-800 rounded-xl p-5 space-y-3&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-white font-bold&quot;&gt;
+            &lt;i data-lucide=&quot;wrench&quot; class=&quot;w-4 h-4 text-emerald-400&quot;&gt;&lt;/i&gt; Infrastructure &amp; Tooling
+          &lt;/div&gt;
+          &lt;div class=&quot;flex flex-wrap gap-2 text-gray-300&quot;&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Docker&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Docker Compose&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Linux / Bash&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Git / GitHub&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;GDB Debugger&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Power BI&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;bg-gray-900/50 border border-gray-800 rounded-xl p-5 space-y-3&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-white font-bold&quot;&gt;
+            &lt;i data-lucide=&quot;sigma&quot; class=&quot;w-4 h-4 text-cyan-400&quot;&gt;&lt;/i&gt; Mathematical Foundations
+          &lt;/div&gt;
+          &lt;div class=&quot;flex flex-wrap gap-2 text-gray-300&quot;&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Linear Algebra&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Probability &amp; Stats&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Discrete Mathematics&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Calculus &amp; ODEs&lt;/span&gt;
+            &lt;span class=&quot;bg-gray-800 px-2 py-1 rounded&quot;&gt;Competitive Algorithms&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Honors, Leadership &amp; Community --&gt;
+    &lt;section id=&quot;honors&quot; class=&quot;space-y-6&quot;&gt;
+      &lt;div class=&quot;border-b border-gray-800 pb-3&quot;&gt;
+        &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-emerald-400&quot;&gt;Merit &amp; Impact&lt;/span&gt;
+        &lt;h2 class=&quot;text-2xl font-bold text-white mt-1&quot;&gt;Honors, Leadership &amp; Community&lt;/h2&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-6&quot;&gt;
+        &lt;!-- Academic Honors --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 space-y-4&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-emerald-400 font-mono text-xs font-bold uppercase&quot;&gt;
+            &lt;i data-lucide=&quot;award&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; Academic Honors &amp; Merit Awards
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;space-y-4&quot;&gt;
+            &lt;div class=&quot;border-b border-gray-800/80 pb-3&quot;&gt;
+              &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+                &lt;span class=&quot;font-bold text-white text-sm&quot;&gt;Molbio Diagnostics Alumni Scholarship&lt;/span&gt;
+                &lt;span class=&quot;text-xs font-mono text-emerald-400 font-semibold&quot;&gt;100% TUITION&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Conferred full tuition merit scholarship based on sustained academic distinction at BITS Pilani.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;border-b border-gray-800/80 pb-3&quot;&gt;
+              &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+                &lt;span class=&quot;font-bold text-white text-sm&quot;&gt;Intern of the Month&lt;/span&gt;
+                &lt;span class=&quot;text-xs font-mono text-cyan-400&quot;&gt;NoQs Digital&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Recognized for architecting production-scale data aggregation pipelines and executive dashboards.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+              &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+                &lt;span class=&quot;font-bold text-white text-sm&quot;&gt;Scholastic Standings&lt;/span&gt;
+                &lt;span class=&quot;text-xs font-mono text-gray-300&quot;&gt;TOP TIER&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Class X: 98.00% (Rank 1 / Institutional) • Class XII: 87.17% (Rank 4) • Top percentile JEE Main 2024 candidate.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Leadership &amp; Social Responsibility --&gt;
+        &lt;div class=&quot;bg-gray-900/60 border border-gray-800 rounded-2xl p-6 space-y-4&quot;&gt;
+          &lt;div class=&quot;flex items-center gap-2 text-cyan-400 font-mono text-xs font-bold uppercase&quot;&gt;
+            &lt;i data-lucide=&quot;heart-handshake&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; Leadership &amp; Social Responsibility
+          &lt;/div&gt;
+
+          &lt;div class=&quot;space-y-4&quot;&gt;
+            &lt;div class=&quot;border-b border-gray-800/80 pb-3&quot;&gt;
+              &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+                &lt;span class=&quot;font-bold text-white text-sm&quot;&gt;RAHAT YESS • Youth Advisory Board&lt;/span&gt;
+                &lt;span class=&quot;text-xs font-mono text-emerald-400&quot;&gt;MENTAL HEALTH&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Certified Peer Supporter and Youth Advisor. Conduct active intervention listening, organize campus wellness frameworks, and advocate for student mental well-being.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;border-b border-gray-800/80 pb-3&quot;&gt;
+              &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+                &lt;span class=&quot;font-bold text-white text-sm&quot;&gt;Nirmaan Organisation&lt;/span&gt;
+                &lt;span class=&quot;text-xs font-mono text-cyan-400&quot;&gt;VOLUNTEER EDUCATOR&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Mentoring underprivileged primary and middle school students on a weekly basis, strengthening their foundational capabilities in Mathematics, English, and analytical problem-solving.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;div&gt;
+              &lt;div class=&quot;flex justify-between items-center&quot;&gt;
+                &lt;span class=&quot;font-bold text-white text-sm&quot;&gt;Society of Finance &amp; Investing (SOFI)&lt;/span&gt;
+                &lt;span class=&quot;text-xs font-mono text-gray-300&quot;&gt;RESEARCH ANALYST&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;p class=&quot;text-xs text-gray-400 mt-1&quot;&gt;Authoring exhaustive sectoral research reports, conducting financial modeling workshops, and participating in fundamental valuation discussions.&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;!-- Recruiter Dialogue / Terminal Box --&gt;
+    &lt;section id=&quot;contact&quot; class=&quot;bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950 border border-gray-800 rounded-3xl p-8 lg:p-10 shadow-2xl relative overflow-hidden&quot;&gt;
+      &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-12 gap-8 items-center&quot;&gt;
+        &lt;div class=&quot;lg:col-span-7 space-y-4&quot;&gt;
+          &lt;span class=&quot;text-xs font-mono uppercase tracking-widest text-emerald-400&quot;&gt;Initiate Dialogue&lt;/span&gt;
+          &lt;h2 class=&quot;text-3xl font-extrabold text-white tracking-tight&quot;&gt;
+            Ready to deploy computational rigor on your desk.
+          &lt;/h2&gt;
+          &lt;p class=&quot;text-sm text-gray-300 max-w-xl leading-relaxed&quot;&gt;
+            Actively seeking High-Conviction Internships for Summer / Fall 2026 across Quantitative Research, High-Frequency Systems, and Software Engineering.
+          &lt;/p&gt;
+          &lt;div class=&quot;flex flex-wrap gap-4 pt-2&quot;&gt;
+            &lt;a href=&quot;mailto:f20240516@goa.bits-pilani.ac.in&quot; class=&quot;px-4 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-bold text-xs font-mono flex items-center gap-2 transition-colors&quot;&gt;
+              &lt;i data-lucide=&quot;mail&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; f20240516@goa.bits-pilani.ac.in
+            &lt;/a&gt;
+            &lt;a href=&quot;tel:+918104141375&quot; class=&quot;px-4 py-2.5 rounded-lg bg-gray-800 hover:bg-gray-700 text-gray-200 font-semibold text-xs font-mono flex items-center gap-2 transition-colors&quot;&gt;
+              &lt;i data-lucide=&quot;phone&quot; class=&quot;w-4 h-4&quot;&gt;&lt;/i&gt; +91 8104141375
+            &lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;lg:col-span-5 bg-gray-950/80 border border-gray-800 rounded-2xl p-5 font-mono text-xs space-y-3&quot;&gt;
+          &lt;div class=&quot;flex justify-between items-center text-gray-400 border-b border-gray-800 pb-2&quot;&gt;
+            &lt;span&gt;TERMINAL // REACHABILITY&lt;/span&gt;
+            &lt;span class=&quot;w-2 h-2 rounded-full bg-emerald-400 animate-pulse&quot;&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex justify-between py-1 border-b border-gray-900&quot;&gt;
+            &lt;span class=&quot;text-gray-500&quot;&gt;Location:&lt;/span&gt;
+            &lt;span class=&quot;text-gray-300&quot;&gt;Goa / Mumbai, India&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex justify-between py-1 border-b border-gray-900&quot;&gt;
+            &lt;span class=&quot;text-gray-500&quot;&gt;Availability:&lt;/span&gt;
+            &lt;span class=&quot;text-emerald-400 font-semibold&quot;&gt;Summer / Fall 2026&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;flex justify-between py-1 border-b border-gray-900&quot;&gt;
+            &lt;span class=&quot;text-gray-500&quot;&gt;Profiles:&lt;/span&gt;
+            &lt;span class=&quot;text-gray-300 space-x-2&quot;&gt;
+              &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; class=&quot;hover:text-emerald-400 underline&quot;&gt;GitHub&lt;/a&gt; • 
+              &lt;a href=&quot;https://linkedin.com&quot; target=&quot;_blank&quot; class=&quot;hover:text-emerald-400 underline&quot;&gt;LinkedIn&lt;/a&gt; • 
+              &lt;a href=&quot;https://codeforces.com&quot; target=&quot;_blank&quot; class=&quot;hover:text-emerald-400 underline&quot;&gt;Codeforces&lt;/a&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;pt-2&quot;&gt;
+            &lt;button onclick=&quot;navigator.clipboard.writeText('f20240516@goa.bits-pilani.ac.in'); alert('Email copied to clipboard!');&quot; class=&quot;w-full py-2 bg-gray-900 hover:bg-gray-800 border border-gray-800 text-gray-300 rounded text-center text-[11px] transition-colors&quot;&gt;
+              Copy Email to Clipboard
+            &lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+
+  &lt;/main&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;footer class=&quot;border-t border-gray-800/80 bg-gray-950/60 py-8 font-mono text-xs text-gray-400&quot;&gt;
+    &lt;div class=&quot;max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4&quot;&gt;
+      &lt;div&gt;
+        &lt;div class=&quot;font-bold text-gray-200&quot;&gt;Jai Deven Limbadiya&lt;/div&gt;
+        &lt;div class=&quot;text-[11px] text-gray-500&quot;&gt;Quantitative Analysis &amp; High-Performance Systems Architecture&lt;/div&gt;
+        &lt;div class=&quot;text-[10px] text-gray-600 mt-1&quot;&gt;© 2025 Jai Deven Limbadiya. BITS Pilani.&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;flex items-center space-x-6 text-[11px]&quot;&gt;
+        &lt;a href=&quot;https://github.com&quot; target=&quot;_blank&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;GitHub&lt;/a&gt;
+        &lt;a href=&quot;https://linkedin.com&quot; target=&quot;_blank&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;LinkedIn&lt;/a&gt;
+        &lt;a href=&quot;https://codeforces.com&quot; target=&quot;_blank&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Codeforces&lt;/a&gt;
+        &lt;a href=&quot;mailto:f20240516@goa.bits-pilani.ac.in&quot; class=&quot;hover:text-emerald-400 transition-colors&quot;&gt;Email&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+
+  &lt;!-- Initialize Lucide Icons --&gt;
+  &lt;script&gt;
+    lucide.createIcons();
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
